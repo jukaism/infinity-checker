@@ -1,0 +1,25 @@
+﻿<Window x:Class="InfiniteChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InfiniteChecker"
+        mc:Ignorable="d"
+        Title="InfiniteChecker" Height="450" Width="300">
+    <Grid Margin="0,0,0,0">
+        <Button Content="チャットフォルダ設定" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock x:Name="chatFolderInfo" HorizontalAlignment="Left" Margin="112,12,0,0" Text="フォルダ未設定" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="sheetName" HorizontalAlignment="Left" Margin="62,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="sheetName_TextChanged"/>
+        <Label Content="シート名" HorizontalAlignment="Left" Margin="8,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="合言葉" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="62,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="password_TextChanged"/>
+        <Label Content="お名前" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.03,0.059"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="62,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="userName_TextChanged"/>
+        <Button x:Name="startButton" Content="動作開始" HorizontalAlignment="Center" Margin="0,224,0,0" VerticalAlignment="Top" Height="37" Width="104" Click="startButton_Click" IsEnabled="False"/>
+        <TextBlock x:Name="debugOutText" HorizontalAlignment="Center" Margin="0,266,0,0" Text="debug output" TextWrapping="Wrap" Width="280" Height="80" VerticalAlignment="Top"/>
+        <Button x:Name="loginButton" Content="ログイン" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top" Height="38" Width="104" Click="loginButton_Click" IsEnabled="False"/>
+        <Button x:Name="resetButton" Content="全クリア" HorizontalAlignment="Left" Margin="235,241,0,0" VerticalAlignment="Top" Click="resetButton_Click" IsEnabled="False"/>
+        <Button x:Name="invoiceButton" Content="精算" HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="104" Click="scanItem" IsEnabled="False" Margin="0,372,0,0"/>
+
+    </Grid>
+</Window>
